@@ -1,20 +1,31 @@
 import styled from 'styled-components';
 
-export const HeaderWrapper = styled.div`
+import { Container } from '../../styles/global.style';
+
+export const HeaderWrapper = styled(Container)`
     display: flex;
     align-items: center;
-    justify-content: center;
     
     height: 109px;
     
     background: ${props => props.theme.background.header};
+
+    @media screen and (max-width: 700px) {
+        & {
+            height: 55px;
+        }
+    }
 `
 
 export const Content = styled.div`
-    width: 80%;
-`
+    width: 100%;
 
-export const ImageContainer = styled.div`
     display: flex;
-    align-items: center;
+
+    @media screen and (max-width: 700px) {
+        img {
+            margin-top: 8px;
+            width: 160px;
+        }
+    }
 `
