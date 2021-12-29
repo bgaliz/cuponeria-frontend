@@ -2,17 +2,19 @@ import styled from 'styled-components';
 
 import { Container } from '../../styles/global.style';
 
-export const HeaderWrapper = styled(Container)`
+export const HeaderWrapper = styled.div`
     display: flex;
     align-items: center;
     
     height: 109px;
+    padding: 20px 50px;
     
     background: ${props => props.theme.background.header};
 
     @media screen and (max-width: 700px) {
         & {
             height: 55px;
+            padding: 20px 0px;
         }
     }
 `

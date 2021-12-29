@@ -10,6 +10,10 @@ export const FooterWrapper = styled(Container)`
     align-items: center;
     
     background: ${props => props.theme.background.header};
+
+    @media screen and (max-width: 700px) {
+        margin-bottom: 60px;
+    }
 `
 
 export const Content = styled.div`

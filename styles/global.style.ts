@@ -9,7 +9,6 @@ export default createGlobalStyle`
 
     html,
     body {
-        
         font-family: 'Roboto', sans-serif;
         outline: none;
     }
@@ -29,6 +28,6 @@ export const Container = styled.div`
     padding: 20px 70px;
 
     @media screen and (max-width: 700px){
-        padding: 20px 5px;
+        padding: 20px 15px;
     }
 `
